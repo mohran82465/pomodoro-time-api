@@ -5,10 +5,10 @@ const port = process.env.PORT || 3000;
 app.get('/',(req,res)=>{
     res.status(200).json(
         {
-            "message": "welcome to the port"
+            "message": "welcome to the api"
         }
     )
-    app.listen(port,()=>{
-        `server started on port ${port}`
-    })
+})
+app.listen(port,()=>{
+    `server started on port ${port}`
 })
